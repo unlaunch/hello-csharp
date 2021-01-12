@@ -28,7 +28,7 @@ namespace hello_csharp
             var feature = client.GetFeature(FlagKey, "user-id-123", null);
             Console.WriteLine($"Variation served: {feature.GetVariation()}");
             Console.WriteLine($"EvaluationReason: {feature.GetEvaluationReason()}");
-
+            
             Thread.Sleep(5000);
 
             client.Shutdown();
