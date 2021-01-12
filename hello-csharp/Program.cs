@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using io.unlaunch;
 
 namespace hello_csharp
@@ -7,26 +8,29 @@ namespace hello_csharp
     {
         private static readonly string SdkKey = "sdkKey";
         private static readonly string FlagKey = "flagKey";
-        
+
         static void Main(string[] args)
         {
             VerifySdkKeyAndFlagKey();
 
-            var client = UnlaunchClient.Create("key");
+            var client = UnlaunchClient.Create(SdkKey);
 
             try
             {
                 client.AwaitUntilReady(3000);
                 Console.WriteLine("Client is ready!!!");
             }
-            catch (TimeoutException e) {
+            catch (TimeoutException e)
+            {
                 Console.WriteLine($"Client wasn't ready, error: {e.Message}");
             }
 
             var feature = client.GetFeature(FlagKey, "user-id-123", null);
             Console.WriteLine($"Variation served: {feature.GetVariation()}");
             Console.WriteLine($"EvaluationReason: {feature.GetEvaluationReason()}");
-            
+
+            Thread.Sleep(5000);
+
             client.Shutdown();
         }
 
