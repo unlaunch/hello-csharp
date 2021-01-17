@@ -17,7 +17,7 @@ namespace hello_csharp
 
             try
             {
-                client.AwaitUntilReady(3000);
+                client.AwaitUntilReady(TimeSpan.FromSeconds(3));
                 Console.WriteLine("Client is ready!!!");
             }
             catch (TimeoutException e)
