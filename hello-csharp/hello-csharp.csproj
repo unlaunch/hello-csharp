@@ -38,8 +38,8 @@
     <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
       <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
     </Reference>
-    <Reference Include="dotnet-sdk, Version=0.0.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\unlaunch.0.0.6\lib\net45\dotnet-sdk.dll</HintPath>
+    <Reference Include="dotnet-sdk, Version=0.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\unlaunch.0.0.7\lib\net45\dotnet-sdk.dll</HintPath>
     </Reference>
     <Reference Include="MurmurHash, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\murmurhash.1.0.3\lib\net45\MurmurHash.dll</HintPath>
