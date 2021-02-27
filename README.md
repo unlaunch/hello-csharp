@@ -7,7 +7,7 @@ This is a **demo** project showing how to integrate the [Unlaunch CSharp SDK](ht
 Unlaunch is a free feature flag service. Please visit [https://www.unlaunch.io](https://www.unlaunch.io) to sign up for a new account today!
 
 # Build Procedure
-1. Download code. Edit Program.cs class set your Unlaunch SDK_KEY and FEATURE_FLAG_KEY you want to evaluate as: 
+Clone the code. Edit Program.cs class set your Unlaunch SDK_KEY and FEATURE_FLAG_KEY you want to evaluate as: 
 
 ```
 private const string SdkKey = "your-sdk-key";
